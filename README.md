@@ -14,3 +14,6 @@ CITPITPL company's website.
   </li>
   
 </ul>
+
+<h2>How to run it: </h2>
+Website will be avaliable via: https://citpitpl.pl
