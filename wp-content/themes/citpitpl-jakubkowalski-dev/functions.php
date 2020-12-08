@@ -140,9 +140,13 @@ add_action( 'widgets_init', 'citpitpl_jakubkowalski_dev_widgets_init' );
  * Enqueue scripts and styles.
  */
 function citpitpl_jakubkowalski_dev_scripts() {
+	wp_enqueue_style( 'citpitpl-jakubkowalski-dev-bootstrap-style'. 'bootstrap.min.css',  array(), _S_VERSION );
+	wp_enqueue_style( 'citpitpl-jakubkowalski-dev-glider-style'. 'glider.min.css',  array(), _S_VERSION );
 	wp_enqueue_style( 'citpitpl-jakubkowalski-dev-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'citpitpl-jakubkowalski-dev-style', 'rtl', 'replace' );
 
+	wp_enqueue_script( 'citpitpl-jakubkowalski-dev-bootstrap-bundle', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'citpitpl-jakubkowalski-dev-glider-js', get_template_directory_uri() . '/js/glider.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'citpitpl-jakubkowalski-dev-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -178,3 +182,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
