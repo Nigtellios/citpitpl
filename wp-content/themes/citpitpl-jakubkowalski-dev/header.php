@@ -24,15 +24,40 @@
 
 	<header id="masthead" class="site-header"> <!-- HEADER -->
 
-		<nav id="site-navigation" class="main-navigation"> <!-- NAV -->
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'citpitpl-jakubkowalski-dev' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
+		<nav class="navigation"> <!-- NAV -->
+			<div class="nav-bar">
+				<div class="just-start">
+					<div class="logotype">
+						<a href="http://citpitpl.test/">
+							<img src="http://citpitpl.test/wp-content/uploads/2020/12/citpitpl-samo-logo-kolor-1-min.png">
+						</a>
+					</div>
+				</div>
+				<div class="just-end">
+					<a class="menu-switcher" onclick="openNav()">
+						<div class="menu-label">
+							<i class="menu-icon"><img src="http://citpitpl.test/wp-content/uploads/2020/12/menu-icon.svg"></i>
+							<h2 class="pink">MENU</h2>
+						</div>
+					</a>
+				</div>
+			</div>
 		</nav><!-- /NAV -->
+
+		<div id="overlay" class="nav-overlay"> <!-- FULL WIDTH MENU OVERLAY -->
+		 <div class="menu-content">
+			<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						)
+					);
+				?>
+			</div>
+			<div class="menu-close" onclick="closeNav()">
+					
+			</div>
+		</div> <!-- /FULL WIDTH MENU -->
+
 	</header><!-- /HEADER -->
