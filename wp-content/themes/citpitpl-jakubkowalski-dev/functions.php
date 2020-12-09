@@ -141,19 +141,22 @@ add_action( 'widgets_init', 'citpitpl_jakubkowalski_dev_widgets_init' );
  * Enqueue scripts and styles.
  */
 function citpitpl_jakubkowalski_dev_scripts() {
-	wp_enqueue_style( 'citpitpl-jakubkowalski-dev-bootstrap-style'. 'bootstrap.min.css',  array(), _S_VERSION );
-	wp_enqueue_style( 'citpitpl-jakubkowalski-dev-glider-style'. 'glider.min.css',  array(), _S_VERSION );
-	wp_enqueue_style( 'citpitpl-jakubkowalski-dev-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
+	wp_enqueue_style('glider', get_template_directory_uri() . '/css/glider.min.css');
+	wp_enqueue_style('citpitpl-jakubkowalski-dev-style', get_stylesheet_uri(), array(), _S_VERSION );
 
 	wp_enqueue_script( 'citpitpl-jakubkowalski-dev-bootstrap-bundle', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'citpitpl-jakubkowalski-dev-glider-js', get_template_directory_uri() . '/js/glider.min.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'citpitpl-jakubkowalski-dev-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+	wp_enqueue_script( 'citpitpl-jakubkowalski-dev-navigation', get_template_directory_uri() . '/js/custom.js', array(), _S_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'citpitpl_jakubkowalski_dev_scripts' );
+
+
+// function wpdocs_theme_name_scripts() {
+// 	wp_enqueue_style( 'style-name', get_stylesheet_uri() );
+// 	wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/example.js', array(), '1.0.0', true );
+// }
+// add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
 
 /**
  * Implement the Custom Header feature.
