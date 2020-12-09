@@ -505,11 +505,137 @@ h5::before {
 /* CLASS STYLING
 --------------------- */
 
+.just-start {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.just-end {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.menu-icon {
+	display: flex;
+	justify-content: center;
+	margin: 0 10px 0 0;
+}
+
+.navigation {
+	position: absolute;
+	width: 100%;
+	z-index: 99;
+}
+
+.nav-bar {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+}
+
+.menu-switcher > .menu-label {
+	margin: 22% 0 0 44%;
+}
+
+.menu-label {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.logotype {
+	width: 451px;
+	height: 327px;
+	background: url('http://citpitpl.test/wp-content/uploads/2020/12/nav-logo-underlay.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.logotype::after {
+	content: "";
+	width: 220px;
+	height: 200px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -9;
+}
+
+.logotype:hover::after {
+	transition: 0.2s ease-in;
+	box-shadow: 25px 25px 550px rgba(0, 0, 0, 1.0);
+}
+
+.logotype > a > img {
+	margin: 16% 0 0 18%;
+}
+
+.menu-switcher {
+	width: 489px;
+	height: 340px;
+	background: url('http://citpitpl.test/wp-content/uploads/2020/12/nav-switcher-underlay.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.menu-switcher:hover {
+	cursor: pointer;
+}
+
+.menu-switcher::after {
+	content: "";
+	width: 250px;
+	height: 200px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -9;
+}
+
+.menu-switcher:hover::after {
+	transition: 0.2s ease-in;
+	box-shadow: 25px 25px 550px rgba(0, 0, 0, 1.0);
+}
+
+.nav-overlay {
+	height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  background-color: rgba(255,255,255, 1.0);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.nav-overlay--open {
+	position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.menu-content {
+	display: flex;
+	height: 100%;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+}
+
+.menu-close {
+	height: 100%;
+	width: 100px;
+	position: absolute;
+	right: 0;
+  top: 0;
+  bottom: 0;
+	background-color: #EF3854;
+}
+
 .hero-content {
 	background: url('http://citpitpl.test/wp-content/uploads/2020/12/hero-Inside-color-min.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
-	padding: 22% 0 18% 0;
+	padding: 23% 0 17% 0;
 	z-index: 1;
 }
 
