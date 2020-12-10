@@ -9,12 +9,12 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="main" class="site-main">
 		<?php
 			the_content();
 		?>
 
-		<section id="hero" class="container-fluid content-mod"> <!-- section 1 - hero -->
+		<section id="oferta" class="container-fluid content-mod"> <!-- section 1 - hero -->
 			<div class="hero"> <!-- hero -->
 				<div class="row hero-content">
 					<div class="col-12 hero-content__align">

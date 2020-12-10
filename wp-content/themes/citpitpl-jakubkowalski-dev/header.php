@@ -34,7 +34,7 @@
 					</div>
 				</div>
 				<div class="just-end">
-					<a class="menu-switcher" onclick="openNav()">
+					<a class="menu-switcher" href="javascript:void(0)" onclick="openNav()">
 						<div class="menu-label">
 							<i class="menu-icon"><img src="http://citpitpl.test/wp-content/uploads/2020/12/menu-icon.svg"></i>
 							<h2 class="pink">MENU</h2>
@@ -46,17 +46,29 @@
 
 		<div id="overlay" class="nav-overlay"> <!-- FULL WIDTH MENU OVERLAY -->
 		 <div class="menu-content">
+			
+		 	<h2>MENU</h2>
 			<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'menu-1',
-							'menu_id'        => 'primary-menu',
-						)
-					);
-				?>
-			</div>
-			<div class="menu-close" onclick="closeNav()">
-					
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					)
+				);
+			?>
+
+				<div class="call-us">
+					<a href="tel:+48506603482">
+						<i><img src="http://citpitpl.test/wp-content/uploads/2020/12/cursor-icon.svg" width="38" height="35"></i>
+						<div>
+							<p><strong>ZADZWOŃ DO NAS!</strong></p>
+							<p>Tel: +48 506 603 482</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="menu-close" href="javascript:void(0)" onclick="closeNav()"></div>
+				
 			</div>
 		</div> <!-- /FULL WIDTH MENU -->
 
