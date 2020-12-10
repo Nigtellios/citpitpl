@@ -34,7 +34,7 @@
 					</div>
 				</div>
 				<div class="just-end">
-					<a class="menu-switcher" onclick="openNav()">
+					<a class="menu-switcher" href="javascript:void(0)" onclick="openNav()">
 						<div class="menu-label">
 							<i class="menu-icon"><img src="http://citpitpl.test/wp-content/uploads/2020/12/menu-icon.svg"></i>
 							<h2 class="pink">MENU</h2>
@@ -55,7 +55,12 @@
 					);
 				?>
 			</div>
-			<div class="menu-close" onclick="closeNav()">
+
+			<div class="call-us">
+				<a><i></i><p>ZADZWOŃ DO NAS!</p></a>
+			</div>
+
+			<div class="menu-close" href="javascript:void(0)" onclick="closeNav()">
 					
 			</div>
 		</div> <!-- /FULL WIDTH MENU -->
