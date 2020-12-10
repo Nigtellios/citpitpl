@@ -633,7 +633,7 @@ h5::before {
 	height: 0;
 	position: absolute;
 	margin: 40px 0 0 0;
-	border-bottom: 5px solid #2D2D2D;
+	border-bottom: 3px solid #2D2D2D;
 }
 
 #primary-menu {
@@ -661,7 +661,7 @@ h5::before {
 	margin: 40px 0 0 0;
 	width: 0%;
 	height: 0px;
-	border-bottom: 5px solid #EF3854;
+	border-bottom: 3px solid #EF3854;
 }
 
 #primary-menu > li > a:hover::before {
