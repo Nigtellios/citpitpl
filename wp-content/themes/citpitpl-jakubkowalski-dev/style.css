@@ -522,6 +522,7 @@ h5::before {
 .menu-icon {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	margin: 0 10px 0 0;
 }
 
@@ -753,17 +754,140 @@ h5::before {
 }
 
 @media screen and (max-width: 1200px) {
+	.logotype {
+		width: 351px;
+		height: 257px;
+	}
+	
+	.logotype::after {
+		width: 120px;
+		height: 120px;
+	}
+	
+	.logotype > a > img {
+		margin: 14% 0 0 14%;
+	}
+	
+	.menu-switcher {
+		width: 389px;
+		height: 280px;
+	}
 
+	.menu-switcher::after {
+		width: 150px;
+		height: 150px;
+	}
+	
 }
 
 @media screen and (max-width: 992px) {
+	.logotype {
+		width: 251px;
+		height: 187px;
+	}
 
+	.logotype::after {
+		width: 85px;
+		height: 85px;
+	}
+
+	.logotype > a > img {
+		margin: 10% 0 0 12%;
+		height: 100px;
+		width: 125px;
+	}
+
+	.menu-switcher {
+		width: 289px;
+		height: 220px;
+	}
+
+	.menu-switcher::after {
+		width: 100px;
+		height: 100px;
+	}
+
+	.menu-switcher > .menu-label {
+    margin: 22% 0 0 34%;
+	}
+
+	.hero-content {
+		background-size: cover;
+		padding: 25% 0 17% 0;
+	}
 }
 
 @media screen and (max-width: 768px) {
-
+	.opened {
+		width: 70%;
+	}
+	.menu-content {
+    margin-left: 10%;
+	}
+	#primary-menu > li > a {
+    font-size: 24px;
+	}
+	.call-us > a {
+    margin-left: -28px;
+	}
+	.hero-content {
+		padding: 30% 0 20% 0;
+	}
 }
 
 @media screen and (max-width: 576px) {
+	h1 {
+		font-size: 28px;
+	}
+	
+	h2 {
+		font-size: 24px;
+	}
 
+	.opened {
+		width: 80%;
+	}
+
+	.logotype {
+		width: 151px;
+		height: 107px;
+	}
+
+	.logotype::after {
+		width: 55px;
+		height: 55px;
+	}
+
+	.logotype > a > img {
+		margin: 10% 0 0 12%;
+		height: 60px;
+		width: 75px;
+	}
+
+	.menu-switcher {
+		width: 160px;
+		height: 140px;
+	}
+
+	.menu-switcher::after {
+		width: 75px;
+		height: 75px;
+	}
+
+	.menu-switcher > .menu-label {
+    margin: 12% 0 0 25%;
+	}
+
+	.menu-icon {
+		margin: 0 5px 0 0;
+	}
+
+	.menu-icon > img {
+		width: 25px;
+		height: 20px;
+	}
+
+	.hero-content {
+		padding: 40% 0 30% 0;
+	}
 }
