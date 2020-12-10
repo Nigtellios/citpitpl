@@ -46,22 +46,29 @@
 
 		<div id="overlay" class="nav-overlay"> <!-- FULL WIDTH MENU OVERLAY -->
 		 <div class="menu-content">
+			
+		 	<h2>MENU</h2>
 			<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'menu-1',
-							'menu_id'        => 'primary-menu',
-						)
-					);
-				?>
-			</div>
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					)
+				);
+			?>
 
-			<div class="call-us">
-				<a><i></i><p>ZADZWOŃ DO NAS!</p></a>
-			</div>
+				<div class="call-us">
+					<a href="tel:+48506603482">
+						<i><img src="http://citpitpl.test/wp-content/uploads/2020/12/cursor-icon.svg" width="38" height="35"></i>
+						<div>
+							<p><strong>ZADZWOŃ DO NAS!</strong></p>
+							<p>Tel: +48 506 603 482</p>
+						</div>
+					</a>
+				</div>
 
-			<div class="menu-close" href="javascript:void(0)" onclick="closeNav()">
-					
+				<div class="menu-close" href="javascript:void(0)" onclick="closeNav()"></div>
+				
 			</div>
 		</div> <!-- /FULL WIDTH MENU -->
 
