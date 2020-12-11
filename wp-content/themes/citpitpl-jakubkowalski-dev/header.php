@@ -67,7 +67,9 @@
 					</a>
 				</div>
 
-				<div class="menu-close" href="javascript:void(0)" onclick="closeNav()"></div>
+				<div class="menu-close" href="javascript:void(0)" onclick="closeNav()">
+					<i><img src="http://citpitpl.test/wp-content/uploads/2020/12/close-icon-white.svg" width="35" height="35"></i>
+				</div>
 				
 			</div>
 		</div> <!-- /FULL WIDTH MENU -->

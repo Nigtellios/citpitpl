@@ -20,8 +20,8 @@ get_header();
 					<div class="col-12 hero-content__align">
 						<p class="toptag light">NOWY WYMIAR</p>
 						<h1 class="light">Finansów i rachunkowości</h1>
-						<p class="p-hero light">
-							Profesjonalne, transparentne usługi księgowe dla Twojej działaności. </br>
+						<p class="p-hero light mw-710">
+							Profesjonalne, transparentne usługi księgowe dla Twojej działaności.
 							Współpraca z księgową jeszcze nigdy nie była tak przyjemna i wygodna!
 						</p>
 						<a class="cta-button" href="http://citpitpl.test/#oferta">
