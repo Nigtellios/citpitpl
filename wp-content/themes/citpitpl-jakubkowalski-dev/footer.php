@@ -11,21 +11,37 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'citpitpl-jakubkowalski-dev' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'citpitpl-jakubkowalski-dev' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'citpitpl-jakubkowalski-dev' ), 'citpitpl-jakubkowalski-dev', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+	<footer class="site-footer"> <!-- FOOTER -->
+		<div class="row top-wrap"> <!-- Logo + Footer-Nav -->
+			<div class="col-sm-12 col-lg-6 just-start">
+				<div class="footer-logotype">
+					<img src="http://citpitpl.test/wp-content/uploads/2020/12/citpitpl-samo-logo-kolor-1-min.png" width="64" height="51">
+					<h2 class="pink">CITPITPL</h2>
+				</div>
+			</div>
+			<div class="col-sm-12 col-lg-6 just-end">
+				<div class="footer-mini-nav">
+					<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'menu-2',
+								'menu_id'        => 'footer-menu',
+								'menu_class'		 => 'mini-nav',
+							)
+						);
+					?>
+				</div>
+			</div>
+		</div>
+		<div class="row copyrights"><!-- Copyrights -->
+			<div class="col-sm-12 col-lg-6 just-start">
+				<p>Copyright 2020 CITPITPL. Wszelkie prawa zastrzeżone.</p>
+			</div>
+			<div class="col-sm-12 col-lg-6 just-end">
+				<p>Made with <span class="pink bolded">love</span> by <span class="tagged"><a href="https://jakubkowalski.dev/" target="_blank">jakubkowalski.dev</a></span></p>
+			</div>
+		</div>
+	</footer><!-- /FOOTER -->
 
 <?php wp_footer(); ?>
 
