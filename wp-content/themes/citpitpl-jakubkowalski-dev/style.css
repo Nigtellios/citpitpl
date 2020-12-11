@@ -43,6 +43,7 @@ html {
  */
 body {
 	margin: 0;
+	overflow-x: hidden;
 }
 
 /**
@@ -418,7 +419,7 @@ p {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 40px;
 	letter-spacing: 0.05em;
 	margin: 0;
 }
@@ -457,10 +458,34 @@ p {
 	line-height: 24px;
 }
 
+/* FUNCTIONALITIES
+--------------------- */
+
+.mw-710 {
+	max-width: 710px;
+}
+
+.mw-540 {
+	max-width: 540px;
+}
+
+.mw-355 {
+	max-width: 355px;
+}
+
+.align-justify {
+	text-align: justify;
+}
+
+.justify-center {
+	display: flex;
+  justify-content: center;
+}
+
 /* FONT EFFECTS
 --------------------- */
 
-h5::before {
+.customer-carousel > h5::before {
 	content: "";
 	width: 70px;
 	height: 0px;
@@ -709,10 +734,6 @@ h5::before {
 	z-index: 1;
 }
 
-.mw-710 {
-	max-width: 710px;
-}
-
 .hero-content__align {
 	padding: 0 8% 0 8%;
 }
@@ -749,6 +770,86 @@ h5::before {
 
 .icons-container__item {
 	margin: 0 60px 0 60px;
+}
+
+/* OFFER SECTION
+--------------------- */
+
+.offer-mod {
+	margin: 50px 0 50px 0;
+	padding: 150px 0 150px 0;
+}
+
+.offer-desc-content {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.offer-desc-content::before {
+	content: "";
+	position: absolute;
+	right: 0;
+	height: 735px;
+	width: 603px;
+	margin: -100px 0 0 0;
+	background: url('http://citpitpl.test/wp-content/uploads/2020/12/citpitpllogo-bcg-element.svg');
+	background-position: top;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+.offer-desc-content > h1 {
+	margin: 0 0 50px 0;
+}
+
+.offer-desc-content > h1::before {
+	content: "";
+	margin: 60px 0 0 0;
+	position: absolute;
+	width: 130px;
+	height: 0px;
+	border-bottom: 3px solid #2D2D2D;
+}
+
+.offer-desc-content > .check-offer {
+	margin: 80px 0 0 0;
+}
+
+.check-offer {
+	align-self: flex-end;
+}
+
+.check-offer > a {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.check-offer > a > i {
+	margin: 0 0 0 10px;
+}
+
+.offer-tile__heading {
+	display: flex;
+	flex-flow: row;
+}
+
+.offer-tile__heading > h5 {
+	margin: 25px 0 0 0;
+}
+
+.offer-tile__heading > h5::before {
+	content: "";
+	width: 70px;
+	height: 0px;
+	position: absolute;
+	border: 2px solid #EF3859;
+	margin: 35px 0 0 100px;
+}
+
+.offer-tile__heading-icon {
+	position: absolute;
+	margin: 30px 0 0 65px;
+	z-index: 99;
 }
 
 /* FOOTER
