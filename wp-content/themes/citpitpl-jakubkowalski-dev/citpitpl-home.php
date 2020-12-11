@@ -14,7 +14,7 @@ get_header();
 			the_content();
 		?>
 
-		<section id="oferta" class="container-fluid content-mod"> <!-- section 1 - hero -->
+		<section id="hero" class="container-fluid content-mod"> <!-- section 1 - hero -->
 			<div class="hero"> <!-- hero -->
 				<div class="row hero-content">
 					<div class="col-12 hero-content__align">
@@ -45,6 +45,44 @@ get_header();
 
 			</div><!-- /carousel -->
 		</section> <!-- /section 1 - hero -->
+
+		<section id="oferta" class="container-fluid offer-mod">
+			<div class="row">
+				<div class="col-sm-12 col-md-6">
+					<div class="row"> <!-- inner-row -> offer tiles -->
+						<div class="col-6">
+							<div class="offer-tile mw-355">
+								<div class="offer-tile__heading">
+									<span>
+										<i class="offer-tile__heading-icon"><img src="http://citpitpl.test/wp-content/uploads/2020/12/pro-tile-icon.svg" width="32" height="25"></i>
+										<img src="http://citpitpl.test/wp-content/uploads/2020/12/pro-tile-bcg.svg">
+									</span>
+									<h5>Profesjonalizm</h5>
+								</div>
+								<div class="offer-tile__content">
+									<p class="p-tiles">Używamy najnowocześniejszych narzędzi do kontroli księgowości Twojej firmy.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							
+						</div>
+					</div><!-- /inner-row -> offer tiles -->
+				</div>
+				<div class="col-sm-12 col-md-6 justify-center">
+					<div class="offer-desc-content mw-540">
+						<h1>Nasz wspólny interes</h1>
+						<p class="align-justify">Twoja firma to również nasz interes, dbamy o kontakt i odpowiednią komunikację abyś czuł się pewnie i bezpiecznie powieżając nam opiekę nad rozliczeniem Twojego biznesu. Zaufaj nam i zobacz szeroką gamę naszej oferty. Nie widzisz usług które Cię interesują? Zadzwoń do nas i dopytaj czy realizujemy płaszczyznę którą pragniesz.</p>
+						<span class="check-offer">
+							<a href="#cennik">
+								<p class="cta pink">ZOBACZ CENNIK</p>
+								<i><img src="http://citpitpl.test/wp-content/uploads/2020/12/cursor-icon.svg" width="20" height="25"></i>
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</section>
 
 
 	</main><!-- #main -->
