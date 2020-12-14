@@ -144,6 +144,173 @@ get_header();
 			</div>
 		</section>
 
+		<section id="cennik" class="container-fluid pricing-mod">
+			<div class="row">
+				<div class="col-sm-12 col-xl-6">
+					<div class="pricing-heading">
+						<h1>Cennik naszych usług</h1>
+						<img src="http://citpitpl.test/wp-content/uploads/2020/12/pricing-bcg-min.png">
+					</div>
+				</div>
+				<div class="col-sm-12 col-xl-6"> <!-- Pricing Accordion -->
+					<div class="accordion" id="accordionExample">
+  					<div class="accordion-item">
+  					  <h2 class="accordion-header" id="headingOne">
+  					    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+  					      <p class="p-btns">PODATNIK ZWOLNIONY Z VAT</p>
+  					    </button>
+  					  </h2>
+  					  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+  					    <div class="accordion-body">
+									<div class="accordion-desc">
+										<p>Cennik usług dla podatników zwolnionych z podatku VAT.</p>
+									</div>
+									<table class="table">
+  									<thead>
+  									  <tr>
+  									    <th scope="col">Ilość dokumentów</th>
+  									    <th scope="col">Cena</th>
+  									  </tr>
+  									</thead>
+  									<tbody>
+  									  <tr>
+  									    <th scope="row">od 1 do 9 dokumentów miesięcznie</th>
+  									    <td>od 100zł + VAT</td>
+  									  </tr>
+  									  <tr>
+  									    <th scope="row">od 10 do 24 dokumentów miesięcznie</th>
+  									    <td>od 150zł + VAT</td>
+  									  </tr>
+  									  <tr>
+  									    <th scope="row">od 25 do 50 dokumentów miesięcznie</th>
+  									    <td>od 250zł + VAT</td>
+											</tr>
+											<tr>
+  									    <th scope="row">od 51 do 100 dokumentów miesięcznie</th>
+  									    <td>od 350zł + VAT</td>
+											</tr>
+											<tr>
+  									    <th scope="row">od 101 do 150 dokumentów miesięcznie</th>
+  									    <td>od 450zł + VAT</td>
+											</tr>
+											<tr>
+  									    <th scope="row">od 151 do 200 dokumentów miesięcznie</th>
+  									    <td>od 500zł + VAT</td>
+											</tr>
+											<tr>
+												<th scope="row">powyżej 200 dokumentów miesięcznie</th>
+												<td>wycena indywidualna</td>
+  									  </tr>
+  									</tbody>
+									</table>
+  					    </div>
+  					  </div>
+  					</div>
+  					<div class="accordion-item">
+  					  <h2 class="accordion-header" id="headingTwo">
+  					    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									<p class="p-btns">PŁATNIK VAT (KPIR)</p>
+  					    </button>
+  					  </h2>
+  					  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+  					    <div class="accordion-body">
+									<div class="accordion-desc">
+										<p>Cennik usług dla płatników podatku VAT (Księga Przychodów i Rozchodów).</p>
+									</div>
+									<table class="table">
+  									<thead>
+  									  <tr>
+  									    <th scope="col">Ilość dokumentów</th>
+  									    <th scope="col">Cena</th>
+  									  </tr>
+  									</thead>
+  									<tbody>
+  									  <tr>
+  									    <th scope="row">od 1 do 9 dokumentów miesięcznie</th>
+  									    <td>od 150 - 250zł + VAT</td>
+  									  </tr>
+  									  <tr>
+  									    <th scope="row">od 10 do 24 dokumentów miesięcznie</th>
+  									    <td>od 250 - 350zł + VAT</td>
+  									  </tr>
+  									  <tr>
+  									    <th scope="row">od 25 do 50 dokumentów miesięcznie</th>
+  									    <td>od 350 - 500zł + VAT</td>
+											</tr>
+											<tr>
+  									    <th scope="row">od 51 do 100 dokumentów miesięcznie</th>
+  									    <td>od 500 - 650zł + VAT</td>
+											</tr>
+											<tr>
+  									    <th scope="row">od 101 do 150 dokumentów miesięcznie</th>
+  									    <td>od 650 - 800zł + VAT</td>
+											</tr>
+											<tr>
+  									    <th scope="row">od 151 do 200 dokumentów miesięcznie</th>
+  									    <td>od 800 - 950zł + VAT</td>
+											</tr>
+  									</tbody>
+									</table>
+  					    </div>
+  					  </div>
+  					</div>
+  					<div class="accordion-item">
+  					  <h2 class="accordion-header" id="headingThree">
+  					    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									<p class="p-btns">KSIĘGI RACHUNKOWE</p>
+  					    </button>
+  					  </h2>
+  					  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+  					    <div class="accordion-body">
+									<div class="accordion-desc">
+										<p>Cennik usług prowadzenia księgi rachunkowej.</p>
+									</div>
+									<table class="table">
+  									<thead>
+  									  <tr>
+  									    <th scope="col">Ilość dokumentów</th>
+  									    <th scope="col">Cena</th>
+  									  </tr>
+  									</thead>
+  									<tbody>
+  									  <tr>
+  									    <th scope="row">od 1 do 9 dokumentów miesięcznie</th>
+  									    <td> od 400 - 600zł + VAT</td>
+  									  </tr>
+  									  <tr>
+  									    <th scope="row">od 10 do 24 dokumentów miesięcznie</th>
+  									    <td>od 600 - 700zł + VAT</td>
+  									  </tr>
+  									  <tr>
+  									    <th scope="row">od 25 do 50 dokumentów miesięcznie</th>
+  									    <td>od 700 - 900zł + VAT</td>
+											</tr>
+											<tr>
+  									    <th scope="row">od 51 do 100 dokumentów miesięcznie</th>
+  									    <td>od 900 - 1400zł + VAT</td>
+											</tr>
+											<tr>
+  									    <th scope="row">od 101 do 150 dokumentów miesięcznie</th>
+  									    <td>od 1400 - 1800zł + VAT</td>
+											</tr>
+											<tr>
+  									    <th scope="row">od 151 do 200 dokumentów miesięcznie</th>
+  									    <td>od 1800 - 2100zł + VAT</td>
+											</tr>
+											<tr>
+  									    <th scope="row">powyżej 200 dokumentów miesięcznie</th>
+  									    <td>wycena indywidualna</td>
+											</tr>
+  									</tbody>
+									</table>
+  					    </div>
+  					  </div>
+  					</div>
+					</div>
+				</div> <!-- /pricing accordion -->
+			</div>
+		</section>
+
 	</main><!-- #main -->
 
 <?php
