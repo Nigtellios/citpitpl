@@ -48,14 +48,14 @@ get_header();
 
 		<section id="oferta" class="container-fluid offer-mod">
 			<div class="row">
-				<div class="col-sm-12 col-md-6">
+				<div class="col-sm-12 col-xl-6">
 					<div class="row"> <!-- inner-row -> offer tiles -->
-						<div class="col-6">
-							<div class="offer-tile mw-355">
+						<div class="col-sm-12 col-md-6 just-cont-md">
+							<div id="tile-pro" class="offer-tile mw-355">
 								<div class="offer-tile__heading">
 									<span>
 										<i class="offer-tile__heading-icon"><img src="http://citpitpl.test/wp-content/uploads/2020/12/pro-tile-icon.svg" width="32" height="25"></i>
-										<img src="http://citpitpl.test/wp-content/uploads/2020/12/pro-tile-bcg.svg">
+										<img src="http://citpitpl.test/wp-content/uploads/2020/12/tile1bcg.svg">
 									</span>
 									<h5>Profesjonalizm</h5>
 								</div>
@@ -63,18 +63,53 @@ get_header();
 									<p class="p-tiles">Używamy najnowocześniejszych narzędzi do kontroli księgowości Twojej firmy.</p>
 								</div>
 							</div>
+							<div id="tile-exp" class="offer-tile mw-355">
+								<div class="offer-tile__heading">
+									<span>
+										<i class="offer-tile__heading-icon"><img src="http://citpitpl.test/wp-content/uploads/2020/12/exp-tile-icon.svg" width="22" height="32"></i>
+										<img src="http://citpitpl.test/wp-content/uploads/2020/12/tile3bcg.svg">
+									</span>
+									<h5>Doświadczenie</h5>
+								</div>
+								<div class="offer-tile__content">
+									<p class="p-tiles">Posiadamy wiele lat doświadczenia w prowadzeniu księgowości w MŚP.</p>
+								</div>
+							</div>
 						</div>
-						<div class="col-6">
-							
+						<div class="col-sm-12 col-md-6 just-cont-md">
+							<div id="tile-time" class="offer-tile mw-355">
+								<div class="offer-tile__heading">
+									<span>
+										<i class="offer-tile__heading-icon"><img src="http://citpitpl.test/wp-content/uploads/2020/12/time-tile-icon.svg" width="27" height="32"></i>
+										<img src="http://citpitpl.test/wp-content/uploads/2020/12/tile2bcg.svg">
+									</span>
+									<h5>Terminowość</h5>
+								</div>
+								<div class="offer-tile__content">
+									<p class="p-tiles">Twoje ważne dokumenty zawsze zostaną złożone w wyznaczonym przez urząd terminie.</p>
+								</div>
+							</div>
+							<div id="tile-coms" class="offer-tile mw-355">
+								<div class="offer-tile__heading">
+									<span>
+										<i class="offer-tile__heading-icon"><img src="http://citpitpl.test/wp-content/uploads/2020/12/comms-tile-icon.svg" width="29" height="26"></i>
+										<img src="http://citpitpl.test/wp-content/uploads/2020/12/tile4bcg.svg">
+									</span>
+									<h5>Komunikacja</h5>
+								</div>
+								<div class="offer-tile__content">
+									<p class="p-tiles">Poinformujemy Cię o każdej ważnej zmianie której będzie podlegała Twoja firma.</p>
+								</div>
+							</div>
 						</div>
 					</div><!-- /inner-row -> offer tiles -->
 				</div>
-				<div class="col-sm-12 col-md-6 justify-center">
+				<div class="col-sm-12 col-xl-6 justify-center">
 					<div class="offer-desc-content mw-540">
 						<h1>Nasz wspólny interes</h1>
 						<p class="align-justify">Twoja firma to również nasz interes, dbamy o kontakt i odpowiednią komunikację abyś czuł się pewnie i bezpiecznie powieżając nam opiekę nad rozliczeniem Twojego biznesu. Zaufaj nam i zobacz szeroką gamę naszej oferty. Nie widzisz usług które Cię interesują? Zadzwoń do nas i dopytaj czy realizujemy płaszczyznę którą pragniesz.</p>
 						<span class="check-offer">
-							<a href="#cennik">
+							<a href="http://citpitpl.test/#cennik">
 								<p class="cta pink">ZOBACZ CENNIK</p>
 								<i><img src="http://citpitpl.test/wp-content/uploads/2020/12/cursor-icon.svg" width="20" height="25"></i>
 							</a>
@@ -84,6 +119,10 @@ get_header();
 			</div>
 		</section>
 
+
+		<section id="o-nas" class="container-fluid about-mod">
+			
+		</section>
 
 	</main><!-- #main -->
 
