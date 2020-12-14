@@ -999,14 +999,14 @@ p {
 
 .about-button {
 	align-self: flex-end;
-	width: 180px;
+	width: 177px;
 	height: 85px;
 	text-align: center;
 	position: relative;
-	margin: -10px -35px 0 0;
+	margin: -10px -30px 0 0;
 	border: 3px solid rgba(255, 43, 80, 0.8);
 	box-sizing: border-box;
-	filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.2));
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
 	border-radius: 20px;
 }
 
@@ -1260,6 +1260,10 @@ p {
 	.site-footer {
 		border-bottom: 20px solid #EF3854;
 	}
+
+	.about-button {
+		margin: 0px -30px 0 0;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -1330,6 +1334,15 @@ p {
 	
 	#tile-time {
 		margin-top: 75px;
+	}
+
+	.about-owner {
+		margin: 100px auto 0 auto;
+    background: none;
+	}
+
+	.about-owner::before {
+    background: none;
 	}
 }
 

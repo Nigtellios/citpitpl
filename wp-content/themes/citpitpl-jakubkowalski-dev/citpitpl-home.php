@@ -119,7 +119,6 @@ get_header();
 			</div>
 		</section>
 
-
 		<section id="o-nas" class="container-fluid about-mod">
 			<div class="row">
 				<div class="col-sm-12 col-xl-6 c-order-2"> 
