@@ -104,7 +104,7 @@ get_header();
 						</div>
 					</div><!-- /inner-row -> offer tiles -->
 				</div>
-				<div class="col-sm-12 col-xl-6 justify-center">
+				<div class="col-sm-12 col-xl-6 justify-center"> <!-- inner-row offer content -->
 					<div class="offer-desc-content mw-540">
 						<h1>Nasz wspólny interes</h1>
 						<p class="align-justify">Twoja firma to również nasz interes, dbamy o kontakt i odpowiednią komunikację abyś czuł się pewnie i bezpiecznie powieżając nam opiekę nad rozliczeniem Twojego biznesu. Zaufaj nam i zobacz szeroką gamę naszej oferty. Nie widzisz usług które Cię interesują? Zadzwoń do nas i dopytaj czy realizujemy płaszczyznę którą pragniesz.</p>
@@ -115,13 +115,34 @@ get_header();
 							</a>
 						</span>
 					</div>
-				</div>
+				</div> <!-- /inner-row offer content -->
 			</div>
 		</section>
 
 
 		<section id="o-nas" class="container-fluid about-mod">
-			
+			<div class="row">
+				<div class="col-sm-12 col-xl-6 c-order-2"> 
+					<div class="about-owner">
+						<div class="about-owner__content">
+							<h1 class="pink">Adriana Prusik</h1>
+							<p class="undertag">PREZES ZARZĄDU</p>
+							<p>
+								Magister Finansów i Rachunkowości na uniwersytecie Gdańskim. Przez paręnaście lat pracowała z wieloma firmami prowadzącymi różnorodne usługi na terenie całej Polski. Posiada szeroką wiedzę w zakresie rachunkowości. Jej profesjonalizm cieszy się uznaniem wśród klientów korzystających z usług spółki.
+							</p>
+							<a class="about-button" href="http://citpitpl.test/#kontakt">
+								<p class="p-btns pink">KONTAKT</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-xl-6 c-order-1">
+					<div class="about-heading">
+						<h1>Warto nam zaufać</h1>
+						<img src="http://citpitpl.test/wp-content/uploads/2020/12/about-us-bcg-min.png">
+					</div>
+				</div>
+			</div>
 		</section>
 
 	</main><!-- #main -->
