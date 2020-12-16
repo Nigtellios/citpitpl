@@ -70,7 +70,8 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-	box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	        box-sizing: content-box;
 	height: 0;
 	overflow: visible;
 }
@@ -94,7 +95,8 @@ pre {
 abbr[title] {
 	border-bottom: none;
 	text-decoration: underline;
-	text-decoration: underline dotted;
+	-webkit-text-decoration: underline dotted;
+	        text-decoration: underline dotted;
 }
 
 /**
@@ -234,7 +236,8 @@ fieldset {
  *		`fieldset` elements in all browsers.
  */
 legend {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	color: inherit;
 	display: table;
 	max-width: 100%;
@@ -262,7 +265,8 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	padding: 0;
 }
 
@@ -340,7 +344,8 @@ template {
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 
 html {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 ol, ul {
@@ -484,8 +489,12 @@ p {
 }
 
 .justify-center {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .equal-padding {
@@ -500,7 +509,8 @@ p {
 /* SECTION MODS */
 
 .content-mod {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 .offer-xl-m {
@@ -540,18 +550,27 @@ p {
 .cta-button {
 	width: 225px;
 	height: 50px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	background: #FFFFFF;
-	box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
+	        box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
 	border-radius: 13px;
 	border: 2px solid transparent;
 }
 
 .cta-button:hover {
+	-webkit-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
 	transition: 0.2s ease-in;
-	box-shadow: 5px 5px 25px rgba(255, 255, 255, 0.3);
+	-webkit-box-shadow: 5px 5px 25px rgba(255, 255, 255, 0.3);
+	        box-shadow: 5px 5px 25px rgba(255, 255, 255, 0.3);
 	color: #FFFFFF;
 	border: 2px solid rgba(239, 56, 84, 0.8);
 }
@@ -560,19 +579,33 @@ p {
 --------------------- */
 
 .just-start {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 }
 
 .just-end {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-end;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 }
 
 .menu-icon {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin: 0 10px 0 0;
 }
 
@@ -583,9 +616,16 @@ p {
 }
 
 .nav-bar {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row;
-	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row;
+	        flex-flow: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .menu-switcher > .menu-label {
@@ -593,14 +633,19 @@ p {
 }
 
 .menu-label {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row nowrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row nowrap;
+	        flex-flow: row nowrap;
 }
 
 .logotype {
 	width: 451px;
 	height: 327px;
-	background: url('http://citpitpl.test/wp-content/uploads/2020/12/nav-logo-underlay.svg');
+	background: url('http://citpitpl-prod.test/wp-content/uploads/2020/12/nav-logo-underlay.svg');
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -616,8 +661,11 @@ p {
 }
 
 .logotype:hover::after {
+	-webkit-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
 	transition: 0.2s ease-in;
-	box-shadow: 25px 25px 550px rgba(0, 0, 0, 1.0);
+	-webkit-box-shadow: 25px 25px 550px rgba(0, 0, 0, 1.0);
+	        box-shadow: 25px 25px 550px rgba(0, 0, 0, 1.0);
 }
 
 .logotype > a > img {
@@ -627,7 +675,7 @@ p {
 .menu-switcher {
 	width: 489px;
 	height: 340px;
-	background: url('http://citpitpl.test/wp-content/uploads/2020/12/nav-switcher-underlay.svg');
+	background: url('http://citpitpl-prod.test/wp-content/uploads/2020/12/nav-switcher-underlay.svg');
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -647,8 +695,11 @@ p {
 }
 
 .menu-switcher:hover::after {
+	-webkit-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
 	transition: 0.2s ease-in;
-	box-shadow: 25px 25px 550px rgba(0, 0, 0, 1.0);
+	-webkit-box-shadow: 25px 25px 550px rgba(0, 0, 0, 1.0);
+	        box-shadow: 25px 25px 550px rgba(0, 0, 0, 1.0);
 }
 
 .nav-overlay {
@@ -660,10 +711,19 @@ p {
   top: 0;
   background-color: rgba(255,255,255, 1.0);
   overflow-x: hidden;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column nowrap;
+	        flex-flow: column nowrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .opened {
@@ -717,6 +777,8 @@ p {
 
 #primary-menu > li > a:hover::before {
 	width: 50px;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 }
 
@@ -728,31 +790,46 @@ p {
   top: 0;
   bottom: 0;
 	background-color: #EF3854;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .call-us > a {
 	margin-left: -38px;
 	padding: 50px 0 0 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row nowrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row nowrap;
+	        flex-flow: row nowrap;
 	color: #2D2D2D;
 }
 
 .call-us > a:hover {
+	-webkit-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
 	transition: 0.2s ease-in;
 	color: #EF3854;
 }
 
 .call-us > a > i > img {
-	transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	    -ms-transform: scaleX(-1);
+	        transform: scaleX(-1);
 	margin: 15px 10px 0 0;
 }
 
 .hero-content {
-	background: url('http://citpitpl.test/wp-content/uploads/2020/12/hero-Inside-color-min.png');
+	background: url('http://citpitpl-prod.test/wp-content/uploads/2020/12/hero-Inside-color-min.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
 	padding: 23% 0 17% 0;
@@ -775,10 +852,19 @@ p {
 	position: relative;
 	margin: -15% 0 0 0;
 	z-index: -1;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: column nowrap;
-	justify-content: flex-end;
-	align-items: flex-end;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column nowrap;
+	        flex-flow: column nowrap;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
 }
 
 .customer-carousel > h5 {
@@ -788,9 +874,16 @@ p {
 
 .icons-container {
 	margin: 0 2% 5% 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row nowrap;
-	justify-content: flex-end; 
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row nowrap;
+	        flex-flow: row nowrap;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end; 
 }
 
 .icons-container__item {
@@ -801,8 +894,13 @@ p {
 --------------------- */
 
 .offer-desc-content {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: column nowrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column nowrap;
+	        flex-flow: column nowrap;
 	margin-top: 75px;
 	padding: 1%;
 }
@@ -814,7 +912,7 @@ p {
 	height: 735px;
 	width: 603px;
 	margin: -100px 0 0 0;
-	background: url('http://citpitpl.test/wp-content/uploads/2020/12/citpitpllogo-bcg-element.svg');
+	background: url('http://citpitpl-prod.test/wp-content/uploads/2020/12/citpitpllogo-bcg-element.svg');
 	background-position: top;
 	background-repeat: no-repeat;
 	z-index: -1;
@@ -838,12 +936,18 @@ p {
 }
 
 .check-offer {
-	align-self: flex-end;
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
 }
 
 .check-offer > a {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row nowrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row nowrap;
+	        flex-flow: row nowrap;
 }
 
 .check-offer > a::before {
@@ -857,6 +961,8 @@ p {
 
 .check-offer > a:hover::before {
 	width: 93px;
+	-webkit-transition: 0.3s ease-in;
+	-o-transition: 0.3s ease-in;
 	transition: 0.3s ease-in;
 	border-bottom: 3px solid #EF3751;
 }
@@ -866,9 +972,15 @@ p {
 }
 
 .offer-tile__heading {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row;
-	justify-content: space-around;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row;
+	        flex-flow: row;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 
 .offer-tile__heading > h5 {
@@ -914,7 +1026,7 @@ p {
 .offer-tile__heading-icon {
 	position: absolute;
 	margin: 21px 0 0 50px;
-	z-index: 99;
+	z-index: 9;
 }
 
 #tile-exp .offer-tile__heading-icon {
@@ -945,8 +1057,13 @@ p {
 --------------------- */
 
 .about-heading {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: column nowrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column nowrap;
+	        flex-flow: column nowrap;
 }
 
 .about-heading > img {
@@ -954,7 +1071,8 @@ p {
 	max-height: 794px;
 	width: 100%;
 	height: 100%;
-	align-self: flex-end;
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
 	margin: -50px 0 0 0;
 }
 
@@ -977,7 +1095,7 @@ p {
 	width: 531px;
 	height: 531px;
 	margin: 400px 0 0 -50px;
-	background: url('http://citpitpl.test/wp-content/uploads/2020/12/dots-bcg-vector.svg');
+	background: url('http://citpitpl-prod.test/wp-content/uploads/2020/12/dots-bcg-vector.svg');
 	z-index: -1;
 }
 
@@ -987,7 +1105,7 @@ p {
 	width: 100%;
 	max-height: 480px;
 	height: 100%; 
-	background: url('http://citpitpl.test/wp-content/uploads/2020/12/owner-bcg.svg');
+	background: url('http://citpitpl-prod.test/wp-content/uploads/2020/12/owner-bcg.svg');
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
@@ -997,15 +1115,20 @@ p {
 	position: absolute;
 	width: 420px;
 	height: 425px;
-	background: url('http://citpitpl.test/wp-content/uploads/2020/12/mother-rework-ps2-min.png');
+	background: url('http://citpitpl-prod.test/wp-content/uploads/2020/12/mother-rework-ps2-min.png');
 	z-index: 9;
 	margin: -347px 0 0 100px;
 }
 
 .about-owner__content {
 	padding: 60px 50px 0 50px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: column nowrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column nowrap;
+	        flex-flow: column nowrap;
 }
 
 .about-owner__content > p:nth-of-type(2) {
@@ -1014,15 +1137,18 @@ p {
 }
 
 .about-button {
-	align-self: flex-end;
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
 	width: 177px;
 	height: 85px;
 	text-align: center;
 	position: relative;
 	margin: -10px -30px 0 0;
 	border: 3px solid rgba(255, 43, 80, 0.8);
-	box-sizing: border-box;
-	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+	        filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
 	border-radius: 20px;
 }
 
@@ -1036,14 +1162,19 @@ p {
 }
 
 .about-button > p:hover::before {
+	-webkit-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
 	transition: 0.3s ease;
 	width: 83px;
 	border-bottom: 3px solid rgba(255, 43, 80, 0.8);
 }
 
 .about-button:hover {
+	-webkit-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
 	transition: 0.3s ease;
-	filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+	-webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+	        filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
 }
 
 .about-button > p {
@@ -1058,7 +1189,8 @@ p {
   max-height: 794px;
   width: 100%;
   height: 100%;
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 	margin: -50px 0 0 0;
 	margin: 0 0 0 -15px;
 }
@@ -1069,7 +1201,7 @@ p {
 	height: 483px;
 	position: absolute;
 	z-index: -1;
-	background: url('http://citpitpl.test/wp-content/uploads/2020/12/pricing-dots.svg');
+	background: url('http://citpitpl-prod.test/wp-content/uploads/2020/12/pricing-dots.svg');
 	margin: 220px 0 0 0;
 }
 
@@ -1133,6 +1265,8 @@ p {
 
 .mini-nav {
 	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -1165,12 +1299,16 @@ p {
 }
 
 .mini-nav > li > a:hover::before {
+	-webkit-transition: 0.3s ease-in;
+	-o-transition: 0.3s ease-in;
 	transition: 0.3s ease-in;
 	width: 30px;
 	border-bottom: 3px solid #EF3854;
 }
 
 .mini-nav > li > a:hover {
+	-webkit-transition: 0.3s ease-in;
+	-o-transition: 0.3s ease-in;
 	transition: 0.3s ease-in;
 	color: #EF3854;
 }
@@ -1181,8 +1319,13 @@ p {
 }
 
 .footer-logotype {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row nowrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row nowrap;
+	        flex-flow: row nowrap;
 }
 
 .footer-logotype > img {
@@ -1205,6 +1348,8 @@ p {
 
 .tagged > a:hover {
 	color: #EF3854;
+	-webkit-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
 	transition: 0.2s ease-in;
 }
 
@@ -1212,9 +1357,16 @@ p {
 ----------------------- */
 
 .news {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	flex-flow: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
 	padding: 35px;
 }
 
@@ -1248,7 +1400,8 @@ p {
 	max-width: 530px;
 	width: 100%;
 	height: 100%;
-	box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.05);
+	-webkit-box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.05);
+	        box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.05);
 	border-radius: 0 0 15px 15px;
 	z-index: 9;
 }
@@ -1264,8 +1417,12 @@ p {
 
 .news-wrapper__content-exc {
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .social-share {
@@ -1281,14 +1438,17 @@ p {
 }
 
 .news-button {
-	align-self: flex-end;
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
 	width: 150px;
 	height: 65px;
 	text-align: center;
 	display: block;
 	border: 3px solid rgba(255, 43, 80, 0.8);
-	box-sizing: border-box;
-	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+	        filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
 	border-radius: 15px;
 	margin: -3px 0 0 0;
 	cursor: pointer;
@@ -1308,24 +1468,36 @@ p {
 }
 
 .news-button > p:hover::before {
+	-webkit-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
 	transition: 0.3s ease;
 	width: 65px;
 	border-bottom: 3px solid rgba(255, 43, 80, 0.8);
 }
 
 .news-button:hover {
+	-webkit-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
 	transition: 0.3s ease;
-	filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+	-webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+	        filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
 }
 
 /* GLIDER EDITING 
 ----------------------- */
 
 .glider-navigation {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: column nowrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column nowrap;
+	        flex-flow: column nowrap;
 	width: 165px;
-	justify-content: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 }
 
 .glider-next, .glider-prev {
@@ -1339,12 +1511,16 @@ p {
 	color: #666;
 	opacity: 1;
 	line-height: 1;
+	-webkit-transition: opacity .5s cubic-bezier(.17,.67,.83,.67),color .5s cubic-bezier(.17,.67,.83,.67);
+	-o-transition: opacity .5s cubic-bezier(.17,.67,.83,.67),color .5s cubic-bezier(.17,.67,.83,.67);
 	transition: opacity .5s cubic-bezier(.17,.67,.83,.67),color .5s cubic-bezier(.17,.67,.83,.67);
 	width: 60px;
 	height: 60px;
 	border: 3px solid #EF3854;
-	box-sizing: border-box;
-	filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.1));
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.1));
+	        filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.1));
 	border-radius: 15px;
 }
 
@@ -1355,8 +1531,10 @@ p {
 	height: 30px;
 	margin: 7px;
 	border: 3px solid #EF3854;
-	box-sizing: border-box;
-	filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.1));
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.1));
+	        filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.1));
 }
 
 .glider-dot:nth-of-type(1) {
@@ -1364,10 +1542,18 @@ p {
 }
 
 .glider-dots {
-	user-select: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 	margin: 0 0 0 0;
 	padding: 0 0 30px 0;
 }
@@ -1381,21 +1567,33 @@ p {
 }
 
 .glider-next:focus, .glider-next:hover, .glider-prev:focus, .glider-prev:hover {
+	-webkit-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
 	transition: 0.3s ease;
-	filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+	-webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+	        filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
 }
 
 /* CONTACT STYLING
 -------------------- */
 
 .contact-r1 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .contact-form {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
 	padding: 0 0 0 16%;
 	max-width: 535px;
 }
@@ -1405,7 +1603,7 @@ p {
 	position: absolute;
 	width: 165px;
 	height: 685px;
-	background: url('http://citpitpl.test/wp-content/uploads/2020/12/contact-dots-element-bcg.svg');
+	background: url('http://citpitpl-prod.test/wp-content/uploads/2020/12/contact-dots-element-bcg.svg');
 	left: 0;
 }
 
@@ -1427,6 +1625,8 @@ p {
 }
 
 .contact-form__heading-info > a:hover {
+	-webkit-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
 	transition: 0.2s ease-in;
 	color: rgba(239, 56, 84, 1.0);
 }
@@ -1436,8 +1636,12 @@ p {
 }
 
 .contact-img {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-end;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 }
 
 .contact-img > img {
@@ -1505,8 +1709,10 @@ textarea {
 	text-align: center;
 	display: block;
 	border: 3px solid rgba(255, 43, 80, 0.8);
-	box-sizing: border-box;
-	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+	        filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
 	border-radius: 15px;
 	margin: -3px 0 0 0;
 	cursor: pointer;
@@ -1520,8 +1726,103 @@ textarea {
 }
 
 .form-button:hover {
+	-webkit-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
 	transition: 0.3s ease;
-	filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+	-webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+	        filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+}
+
+/* BOTTOM BAR 
+---------------- */
+
+.bottom-bar--unactive {
+  display: none !important;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 100%;
+  height: 100px;
+  border-top: 3px solid #EF3751;
+  background-color: #FFFFFF;
+  z-index: 99;
+}
+
+.bottom-bar--unactive {
+  display: none;
+}
+
+.bottom-bar__contact {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bottom-bar__menu {
+  width: 50%;
+	height: 100%;
+	border-left: 3px solid #EF3751;
+}
+
+.bottom-bar__menu > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bottom-bar__contact > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fluid-flow {
+	visibility: visible;
+	-webkit-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
+	transition: 0.2s linear;
+	height: 100px;
+}
+
+.closed {
+	-webkit-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
+	transition: 0.2s linear;
+	height: 0%;
+	visibility: hidden;
 }
 
 /*--------------------------------------------------------------
@@ -1560,10 +1861,14 @@ textarea {
 		padding-left: 8%;
 	}
 	.c-order-2 {
-		order: 2;
+		-webkit-box-ordinal-group: 3;
+		    -ms-flex-order: 2;
+		        order: 2;
 	}
 	.c-order-1 {
-		order: 1;
+		-webkit-box-ordinal-group: 2;
+		    -ms-flex-order: 1;
+		        order: 1;
 	}
 	.accordion {
 		margin-top: 150px;
@@ -1646,8 +1951,13 @@ textarea {
 	}
 
 	.mini-nav {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-flow: row wrap;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: row wrap;
+		        flex-flow: row wrap;
 	}
 
 	.top-wrap {
@@ -1655,11 +1965,15 @@ textarea {
 	}
 
 	.top-wrap > .just-end {
-		justify-content: start;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: start;
 	}
 
 	.copyrights > .just-end {
-		justify-content: start;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: start;
 	}
 
 	.copyrights > div:first-child > p:first-child {
@@ -1684,15 +1998,25 @@ textarea {
 	}
 
 	.c-order-lg-2 {
-		order: 2;
+		-webkit-box-ordinal-group: 3;
+		    -ms-flex-order: 2;
+		        order: 2;
 	}
 
 	.c-order-lg-1 {
-		order: 1;
+		-webkit-box-ordinal-group: 2;
+		    -ms-flex-order: 1;
+		        order: 1;
 	}
 }
 
 @media screen and (max-width: 768px) {
+	.bottom-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	}
+	
 	.opened {
 		width: 70%;
 	}
@@ -1739,7 +2063,10 @@ textarea {
 	}
 
 	.mini-nav {
-		flex-flow: column nowrap;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: column nowrap;
+		        flex-flow: column nowrap;
 	}
 
 	.mini-nav > li:first-child {
@@ -1774,8 +2101,13 @@ textarea {
 	.about-owner__content {
 		padding-left: 5%;
 		padding-right: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
 	}
 
 	.about-button {

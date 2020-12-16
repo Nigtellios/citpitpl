@@ -74,4 +74,21 @@
 			</div>
 		</div> <!-- /FULL WIDTH MENU -->
 
+		<aside class="bottom-bar" id="mobileToggler">
+    <div class="bottom-bar__contact">
+      <a href="tel:+48506603482" class="pointer">
+        <div class="nav__callus">
+          <h1 class="pink">ZADZWOŃ</h4>
+        </div>
+      </a>
+    </div>
+    <div class="bottom-bar__menu">
+      <a onclick="openNav();" class="pointer" href="javascript:void(0)">
+        <div class="nav__menu-switcher">
+          <h1 class="pink">MENU</h4>
+        </div>
+      </a>
+    </div>
+  </aside>
+
 	</header><!-- /HEADER -->
