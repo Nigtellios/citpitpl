@@ -1868,3 +1868,26 @@ textarea {
 		margin: 0 8% 10% 0;
 	}
 }
+
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 24px;
+	}
+
+	.about-heading > h1 {
+		margin-bottom: 100px;
+	}
+
+	.about-owner {
+    margin-top: 150px;
+	}
+
+	#cennik {
+		margin-top: 100px;
+	}
+
+	.accordion {
+    margin-top: 75px;
+    margin-bottom: 50px;
+	}
+}
