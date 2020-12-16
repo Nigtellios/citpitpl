@@ -311,6 +311,88 @@ get_header();
 			</div>
 		</section>
 
+		<section id="aktualnosci" class="container-fluid news-mod">
+			<div class="row">
+				<div class="col-sm-12 col-xl-4 c-order-2 news"> <!-- News Glider navigation -->
+					<div class="news-heading">
+						<h1>Aktualności</h1>
+						<p>Najnowsze informacje ze świata finansów i rachunkowości</p>
+					</div>
+					<div class="glider-navigation">
+						<div class="dots">
+						  <!-- Glider Class -->
+							<div role="tablist" class="dots"></div>
+						</div>
+						<div class="arrows">
+							<!-- Glider Class -->
+							<button aria-label="Previous" class="glider-prev"><img src="http://citpitpl.test/wp-content/uploads/2020/12/arrow-left.svg" width="16" height="24"></button>
+  						<button aria-label="Next" class="glider-next"><img src="http://citpitpl.test/wp-content/uploads/2020/12/arrow-right.svg" width="16" height="24"></button>
+						</div>
+					</div>
+				</div> <!-- //Glider navigation -->
+				<div class="col-sm-12 col-xl-8 c-order-1"> <!-- Glider content -->
+					<div class="glider-contain">
+						<div class="glider">
+    					<div>
+								<div class="news-wrapper">
+									<img src="http://citpitpl.test/wp-content/uploads/2020/12/aktualnosci-heading-1-min.png">
+									<div class="news-wrapper__content">
+										<h5>Dla czekających na tarczę 6.0</h5>
+										<p class="p-news">Dla większości przedsiębiorców 10 grudnia upływa termin zapłaty składek za listopad. Płatnicy (...)</p>
+										<div class="news-wrapper__content-exc">
+											<span class="social-share">
+												<a><i><img src="http://citpitpl.test/wp-content/uploads/2020/12/facebook-square.svg" width="22" height="23"></i></a>
+												<a><i><img src="http://citpitpl.test/wp-content/uploads/2020/12/instagram-icon.svg" width="23" height="23"></i></a>
+											</span>
+											<a class="news-button">
+												<p class="p-btns pink">CZYTAJ</p>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+    					<div>
+								<div class="news-wrapper">
+									<img src="http://citpitpl.test/wp-content/uploads/2020/12/aktualnosci-heading-2-min.png">
+									<div class="news-wrapper__content">
+										<h5>Koniec roku podatkowego</h5>
+										<p class="p-news">Pamiętajmy iż wysoka wartość remanentu na koniec roku podwyższy wartość dochodu do opodatkowania. (...)</p>
+										<div class="news-wrapper__content-exc">
+											<span class="social-share">
+												<a><i><img src="http://citpitpl.test/wp-content/uploads/2020/12/facebook-square.svg" width="22" height="23"></i></a>
+												<a><i><img src="http://citpitpl.test/wp-content/uploads/2020/12/instagram-icon.svg" width="23" height="23"></i></a>
+											</span>
+											<a class="news-button">
+												<p class="p-btns pink">CZYTAJ</p>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+    					<div>
+								<div class="news-wrapper">
+									<img src="http://citpitpl.test/wp-content/uploads/2020/12/aktualnosci-heading-1-min.png">
+									<div class="news-wrapper__content">
+										<h5>Kasy fiskalne online</h5>
+										<p class="p-news">Zbliża się termin wymiany  kas fiskalnych starego typu na kasy online. Od 1 stycznia 2021 kasy online (...)</p>
+										<div class="news-wrapper__content-exc">
+											<span class="social-share">
+												<a><i><img src="http://citpitpl.test/wp-content/uploads/2020/12/facebook-square.svg" width="22" height="23"></i></a>
+												<a><i><img src="http://citpitpl.test/wp-content/uploads/2020/12/instagram-icon.svg" width="23" height="23"></i></a>
+											</span>
+											<a class="news-button">
+												<p class="p-btns pink">CZYTAJ</p>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+  					</div>
+					</div>
+				</div> <!-- //Glider content -->
+			</div>
+		</section>
+
 	</main><!-- #main -->
 
 <?php
