@@ -46,10 +46,10 @@ get_header();
 			</div><!-- /carousel -->
 		</section> <!-- /section 1 - hero -->
 
-		<section id="oferta" class="container-fluid offer-mod">
+		<section id="oferta" class="container-fluid offer-mod equal-padding">
 			<div class="row">
 				<div class="col-sm-12 col-xl-6">
-					<div class="row"> <!-- inner-row -> offer tiles -->
+					<div class="row offer-xl-m"> <!-- inner-row -> offer tiles -->
 						<div class="col-sm-12 col-md-6 just-cont-md">
 							<div id="tile-pro" class="offer-tile mw-355">
 								<div class="offer-tile__heading">
@@ -119,7 +119,7 @@ get_header();
 			</div>
 		</section>
 
-		<section id="o-nas" class="container-fluid about-mod">
+		<section id="o-nas" class="container-fluid about-mod equal-padding">
 			<div class="row">
 				<div class="col-sm-12 col-xl-6 c-order-2"> 
 					<div class="about-owner">
@@ -144,7 +144,7 @@ get_header();
 			</div>
 		</section>
 
-		<section id="cennik" class="container-fluid pricing-mod">
+		<section id="cennik" class="container-fluid pricing-mod equal-padding">
 			<div class="row">
 				<div class="col-sm-12 col-xl-6">
 					<div class="pricing-heading">
@@ -311,7 +311,7 @@ get_header();
 			</div>
 		</section>
 
-		<section id="aktualnosci" class="container-fluid news-mod">
+		<section id="aktualnosci" class="container-fluid news-mod equal-padding">
 			<div class="row">
 				<div class="col-sm-12 col-xl-4 c-order-2 news"> <!-- News Glider navigation -->
 					<div class="news-heading">
@@ -390,6 +390,26 @@ get_header();
   					</div>
 					</div>
 				</div> <!-- //Glider content -->
+			</div>
+		</section>
+
+		<section id="kontakt" class="confainer-fluid contact-mod equal-padding">
+			<div class="row">
+				<div class="col-sm-12 col-lg-6 contact-r1 c-order-lg-2">
+					<div class="contact-form">
+						<div class="contact-form__heading">
+							<h1>Kontakt</h1>
+							<div class="contact-form__heading-info">
+								<a href="tel:+48506603482" class="gray"><p><span>Tel:</span> +48 506 603 482</p></a>
+								<a href="mailto:biuro@citpitpl.pl" class="gray"><p><span>E-mail:</span> biuro@citpitpl.pl</p></a>
+							</div>
+						</div>
+					 <?php echo do_shortcode( '[contact-form-7 id="5" title="formularz"]' ); ?>
+					</div>
+				</div>
+				<div class="col-sm-12 col-lg-6 contact-img c-order-lg-1">
+					<img src="http://citpitpl.test/wp-content/uploads/2020/12/contact-bcg-min.png">
+				</div>
 			</div>
 		</section>
 
