@@ -355,10 +355,6 @@ ol, ul {
 MAIN STYLING 
 ------------------------------------------ */
 
-.content-mod {
-	box-sizing: border-box;
-}
-
 a {
 	text-decoration: none;
 }
@@ -490,6 +486,35 @@ p {
 .justify-center {
 	display: flex;
   justify-content: center;
+}
+
+.equal-padding {
+	/* Here goes equal padding for every section */
+}
+
+/* SECTION MODS */
+
+.content-mod {
+	box-sizing: border-box;
+}
+
+.offer-mod {
+	margin: 50px 0 50px 0;
+	padding: 150px 4% 150px 4%;
+}
+
+.about-mod {
+	margin: 50px 0 50px 0;
+	padding: 50px 0 150px 0;
+}
+
+.news-mod {
+	margin: 50px 0 50px 0;
+	padding: 150px 0 150px 0;
+}
+
+.pricing-mod {
+	padding: 150px 0 150px 0;
 }
 
 /* FONT EFFECTS
@@ -785,11 +810,6 @@ p {
 /* OFFER SECTION
 --------------------- */
 
-.offer-mod {
-	margin: 50px 0 50px 0;
-	padding: 150px 4% 150px 4%;
-}
-
 .offer-desc-content {
 	display: flex;
 	flex-flow: column nowrap;
@@ -934,11 +954,6 @@ p {
 /* ABOUT US SECTION
 --------------------- */
 
-.about-mod {
-	margin: 50px 0 50px 0;
-	padding: 50px 0 150px 0;
-}
-
 .about-heading {
 	display: flex;
 	flex-flow: column nowrap;
@@ -1047,10 +1062,6 @@ p {
 
 /* PRICING SECTION
 --------------------- */
-
-.pricing-mod {
-	padding: 150px 0 150px 0;
-}
 
 .pricing-heading > img {
   max-width: 730px;
@@ -1215,11 +1226,6 @@ p {
 	justify-content: space-between;
 	flex-flow: column;
 	padding: 35px;
-}
-
-.news-mod {
-	margin: 50px 0 50px 0;
-	padding: 150px 0 150px 0;
 }
 
 #aktualnosci {
@@ -1387,6 +1393,56 @@ p {
 .glider-next:focus, .glider-next:hover, .glider-prev:focus, .glider-prev:hover {
 	transition: 0.3s ease;
 	filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+}
+
+/* CONTACT STYLING
+-------------------- */
+
+.contact-form {
+	display: flex;
+	flex-flow: column;
+	padding: 0 16% 0 16%;
+	max-width: 535px;
+}
+
+.contact-form::before {
+	content: "";
+	position: absolute;
+	width: 165px;
+	height: 685px;
+	background: url('http://citpitpl.test/wp-content/uploads/2020/12/contact-dots-element-bcg.svg');
+	left: 0;
+}
+
+.contact-img {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.contact-img > img {
+	max-width: 1086px;
+	max-height: 792px;
+	width: 100%;
+	height: 100%;
+}
+
+input[type="text"] {
+	padding: 1px 2px;
+	width: 100%;
+}
+
+input[type="tel"] {
+	padding: 1px 2px;
+	width: 100%;
+}
+
+input[type="email"] {
+	padding: 1px 2px;
+	width: 100%;
+}
+
+textarea {
+	width: 100%;
 }
 
 /*--------------------------------------------------------------
