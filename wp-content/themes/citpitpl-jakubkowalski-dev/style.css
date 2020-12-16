@@ -490,6 +490,11 @@ p {
 
 .equal-padding {
 	/* Here goes equal padding for every section */
+	padding: 115px 0 115px 0;
+}
+
+.rules-padding {
+	padding: 300px 0 150px 0;
 }
 
 /* SECTION MODS */
@@ -498,23 +503,8 @@ p {
 	box-sizing: border-box;
 }
 
-.offer-mod {
-	margin: 50px 0 50px 0;
-	padding: 150px 4% 150px 4%;
-}
-
-.about-mod {
-	margin: 50px 0 50px 0;
-	padding: 50px 0 150px 0;
-}
-
-.news-mod {
-	margin: 50px 0 50px 0;
-	padding: 150px 0 150px 0;
-}
-
-.pricing-mod {
-	padding: 150px 0 150px 0;
+.offer-xl-m {
+	padding: 0 0 0 8%;
 }
 
 /* FONT EFFECTS
@@ -1398,10 +1388,15 @@ p {
 /* CONTACT STYLING
 -------------------- */
 
+.contact-r1 {
+	display: flex;
+	align-items: center;
+}
+
 .contact-form {
 	display: flex;
 	flex-flow: column;
-	padding: 0 16% 0 16%;
+	padding: 0 0 0 16%;
 	max-width: 535px;
 }
 
@@ -1412,6 +1407,32 @@ p {
 	height: 685px;
 	background: url('http://citpitpl.test/wp-content/uploads/2020/12/contact-dots-element-bcg.svg');
 	left: 0;
+}
+
+.contact-form__heading > h1::before {
+	content: "";
+	margin: 60px 0 0 0;
+	position: absolute;
+	width: 130px;
+	height: 0px;
+	border-bottom: 3px solid #2D2D2D;
+}
+
+.contact-form__heading > h1 {
+	margin: 0 0 40px 0;
+}
+
+.contact-form__heading-info {
+	margin: 0 0 20px 0;
+}
+
+.contact-form__heading-info > a:hover {
+	transition: 0.2s ease-in;
+	color: rgba(239, 56, 84, 1.0);
+}
+
+.contact-form__heading-info > a > p > span {
+	font-weight: bold;
 }
 
 .contact-img {
@@ -1427,22 +1448,80 @@ p {
 }
 
 input[type="text"] {
-	padding: 1px 2px;
+	padding: 10px;
 	width: 100%;
+	border: none;
+	border-bottom: 3px solid #EF3854;
+	background: transparent;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
 }
 
 input[type="tel"] {
-	padding: 1px 2px;
+	padding: 10px;
 	width: 100%;
+	border: none;
+	border-bottom: 3px solid #EF3854;
+	background: transparent;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
 }
 
 input[type="email"] {
-	padding: 1px 2px;
+	padding: 10px;
 	width: 100%;
+	border: none;
+	border-bottom: 3px solid #EF3854;
+	background: transparent;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
 }
 
 textarea {
+	padding: 10px;
 	width: 100%;
+	border: none;
+	border-bottom: 3px solid #EF3854;
+	background: transparent;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.form-row {
+	padding: 15px 0 15px 0;
+}
+
+.form-button {
+	width: 150px;
+	height: 65px;
+	text-align: center;
+	display: block;
+	border: 3px solid rgba(255, 43, 80, 0.8);
+	box-sizing: border-box;
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+	border-radius: 15px;
+	margin: -3px 0 0 0;
+	cursor: pointer;
+	background: transparent;
+	color:rgba(239, 56, 84, 1.0);
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 61px;
+}
+
+.form-button:hover {
+	transition: 0.3s ease;
+	filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
 }
 
 /*--------------------------------------------------------------
@@ -1512,6 +1591,10 @@ textarea {
 	.p-hero {
 		font-size: 18px;
 		line-height: 21px;
+	}
+
+	.equal-padding {
+		padding: 80px 0 80px 0;
 	}
 
 	.menu-icon {
@@ -1594,6 +1677,19 @@ textarea {
 	.about-button {
 		margin: 0px -30px 0 0;
 	}
+	
+	.contact-form {
+		max-width: unset;
+		padding: 0 10% 0 10%;
+	}
+
+	.c-order-lg-2 {
+		order: 2;
+	}
+
+	.c-order-lg-1 {
+		order: 1;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -1628,6 +1724,10 @@ textarea {
 	.p-hero {
 		font-size: 16px;
 		line-height: 19px;
+	}
+
+	.equal-padding {
+		padding: 80px 0 80px 0;
 	}
 
 	.customer-carousel {
@@ -1671,6 +1771,17 @@ textarea {
     background: none;
 	}
 
+	.about-owner__content {
+		padding-left: 5%;
+		padding-right: 5%;
+    display: flex;
+    flex-flow: column nowrap;
+	}
+
+	.about-button {
+    margin: 30px 0 0 0;
+	}
+
 	.about-owner::before {
     background: none;
 	}
@@ -1678,6 +1789,19 @@ textarea {
 	.accordion {
 		padding: 0 5% 0 5%;
 	}
+
+	.offer-desc-content {
+    padding: 1% 5% 1% 5%;
+	}
+
+	.contact-form::before {
+    display: none;
+	}
+
+	.offer-xl-m {
+    padding: 0 5% 0 5%;
+	}
+	
 }
 
 @media screen and (max-width: 576px) {
